@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Dashboard from './Dashboard';
+import Login from './auth/Login';
 import { logoutUser } from '../actions/auth';
 
 const Home = (props) => {
@@ -21,7 +22,7 @@ const Home = (props) => {
   } else {
     return (
       <div>
-        <h1>Please login.</h1>
+        <Login />
       </div>
     )
   }

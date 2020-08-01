@@ -42,7 +42,10 @@ export const auth = (state = initialAuthState, action) => {
         errorMessage: action.errorMessage
       }
     case REQUEST_USER_LOGOUT:
-      return state
+      return {
+        ...state,
+        isLoggedIn: false
+      }
     default:
       return state
   }
