@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Topnav from '../components/nav/Topnav';
 
 const Dashboard = (props) => {
 
   return (
-    <div></div>
+    <Topnav />
   )
 
 }
